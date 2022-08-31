@@ -1,0 +1,66 @@
+---
+title: "Quantitative Methods for Development Economics"
+author: "Zahid Asghar"
+footer: "zahidasghar.com"
+format: html
+editor: visual
+---
+
+## Course Overview
+
+This course is designed to introduce students to impact evaluation. Can we improve vaccination in India with small nudges? Is pollution harmful in China? Does it matter to belong to the ethnic group of an elected official when it comes to employment? Does it really matter to have an extra year of schooling for income years later? If yes, what is the magnitude of these effects? How much should you trust these results? The answer to these questions determines public policy and inform debates about development issues.
+
+## Learning Outcomes
+
+By the end of this course, students will be familiar with the main research designs used for impact evaluation. This includes the understanding of the statistical tools used, the ability to replicate research papers or perform their own analysis using R and interpret the results.
+
+## Instructional Method
+
+**Structure** -- The course is divided in 2 parts. Classes 1 through 10 are designed to introduce students to the fundamentals of statistics and causal inference. In the second part, we will study different research designs and learn about how they work and when one should use them.
+
+**Book** -- There is no required textbook for this course. Information provided during lectures and in the slides will be sufficient to write the exams. I will be providing students with several sets of practice questions during the course, and will not use exercises from any textbook. For those students who would like to refer to a textbook during this course you have several possibilities:
+## Inspired by introductory courses
+
+Innovations in introductory courses in line with recommendations in the [2016 GAISE report](https://www.amstat.org/docs/default-source/amstat-documents/gaisecollege_full.pdf).
+
+. . .
+
+::: columns
+::: {.column width="25%"}
+![[Introduction to econometrics](https://www.pearson.com/en-us/subject-catalog/p/introduction-to-econometrics/P200000006421?view=educator)](econometrics.jpg)
+:::
+
+::: {.column width="25%"}
+![[Impact evaluation in practice](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice)](impact_eval.jpg)
+:::
+
+::: {.column width="25%"}
+![[The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/)](the_effect.jpg)
+:::
+
+::: {.column width="25%"}
+![[Introduction to Econometrics with R.](https://www.econometrics-with-r.org/)](econometrics_R.png)
+:::
+:::
+-   Stock, James H. and Mark W. Watson (2019). Introduction to Econometrics, 3rd or 4th edition, Pearson Education.
+-   The content of the book is closest to what is taught in class
+-   Hanck, Christoph, Martin Arnold, Alexander Gerber, and Martin Schmelzer. ["Introduction to Econometrics with R."](https://www.econometrics-with-r.org/) University of Duisburg-Essen (2019). -- is a free book available online which follows closely Stock and Watson (2015) and adds examples in R
+
+| **Week** | **Title**                                                              | **Topics covered**                                                                                                                         | **Essential reading**                                                                                                                                                                                                                                             |
+|:------------|:------------|:--------------|:-------------------------------|
+| 1        | Introduction to Quantitative Methods for Development Economics (and R) | Introduction to quantitative methods; description, prediction and causality; research design; R basics                                     | Chapter 1, "Introduction", in Imai                                                                                                                                                                                                                                |
+| 2        | Simple, Multiple and Nonlinear Regression Models                       | Concepts and application to earning and smoking data, hypothesis testing and confidence interval , sampling distribution of OLS estimators | Ch4-8 "Introduction to Econometrics" Stock and Watson                                                                                                                                                                                                             |
+|          | Simple, Multiple and Nonlinear Regression Models                       | Concepts and application to earning and smoking data, hypothesis testing and confidence interval , sampling distribution of OLS estimators | Ch4-8 "Introduction to Econometrics" Stock and Watson                                                                                                                                                                                                             |
+| 3        | Internal and External validity                                         | Threats to internal and external validity of regression models                                                                             | Ch9 "Introduction to Econometrics" Stock and Watson                                                                                                                                                                                                               |
+| 4        | Regression IV (Panel data)                                             | Data with repeated observations of the same units over time; fixed-effect models                                                           | Chapter 10, "Regression with Panel Data", in Stock and Watson, available [here](https://moodle.ucl.ac.uk/pluginfile.php/3633836/mod_resource/content/1/Introduction_to_Econometrics_Update_Global_Edition_----_%28CHAPTER_10_Regression_with_Panel_Data%29-2.pdf) |
+| 5        | Logit and Probit Models                                                | Concepts and application,Non-standard standard errors; logistic regression                                                                 | Chapter 11, "Introduction to Econometrics" Stock and Watson                                                                                                                                                                                                       |
+| 6        | Continued                                                              | continued                                                                                                                                  | "Introduction to Econometrics" Stock and Watson                                                                                                                                                                                                                   |
+| 7        | Regression IV (Panel data)                                             | Data with repeated observations of the same units over time; fixed-effect models                                                           | Chapter 10, "Regression with Panel Data", in Stock and Watson, available [here](https://moodle.ucl.ac.uk/pluginfile.php/3633836/mod_resource/content/1/Introduction_to_Econometrics_Update_Global_Edition_----_%28CHAPTER_10_Regression_with_Panel_Data%29-2.pdf) |
+| 8        | Instrumental Variable                                                  | Does cigarette tax reduce demand for smoking?                                                                                              | Chapter 12, "Regression with Panel Data", in Stock and Watson, available [here](https://moodle.ucl.ac.uk/pluginfile.php/3633836/mod_resource/content/1/Introduction_to_Econometrics_Update_Global_Edition_----_%28CHAPTER_10_Regression_with_Panel_Data%29-2.pdf) |
+| 9        | RCTs and Difference in differences estimators                          | Experiments, Quasi-experiments                                                                                                             | Ch 13                                                                                                                                                                                                                                                             |
+| 10       | Continued                                                              | continued                                                                                                                                  | continued                                                                                                                                                                                                                                                         |
+| 11       | Regression Discontinuity Designs                                       | Regression Discontinuity Designs                                                                                                           |                                                                                                                                                                                                                                                                   |
+| 12       | continued                                                              | continued                                                                                                                                  |                                                                                                                                                                                                                                                                   |
+| 13       | Projects evaluations                                                   |                                                                                                                                            |                                                                                                                                                                                                                                                                   |
+| 14       | Projects evaluations                                                   |                                                                                                                                            |                                                                                                                                                                                                                                                                   |
+| 15       | Revision                                                               |                                                                                                                                            |                                                                                                                                                                                                                                                                   |
