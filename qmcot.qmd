@@ -2,7 +2,9 @@
 title: "Quantitative Methods for Development Economics"
 author: "Zahid Asghar, School of Economics, QAU Islamabad"
 footer: "zahidasghar.com"
-format: html
+format:
+  html:
+    theme: [default, custom.scss]
 editor: visual
 ---
 
