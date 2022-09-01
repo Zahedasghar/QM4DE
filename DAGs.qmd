@@ -1,0 +1,36 @@
+---
+title: "DAGs"
+format:
+  html:
+    theme: [default,custom.scss]
+editor: visual
+---
+
+## Directed Acyclical Graphs
+
+```{r}
+# Load packages
+library(tidyverse)  # For dplyr, ggplot, and friends
+library(ggdag)      # For plotting DAGs
+library(dagitty)    # For working with DAG logic
+model_dagitty<-dagitty('dag {
+bb="-3.184,-3.632,3.709,3.566"
+"No single recipe for answering a question" [pos="-0.019,-0.016"]
+"Use head" [pos="0.893,-3.033"]
+"economic theory" [pos="-2.527,1.890"]
+"explore data" [pos="3.134,-0.089"]
+"linearity vs nonlinearities" [pos="1.016,2.966"]
+"shoe leather" [pos="-2.609,-1.819"]
+"Use head" -> "No single recipe for answering a question"
+"economic theory" -> "No single recipe for answering a question"
+"explore data" -> "No single recipe for answering a question"
+"linearity vs nonlinearities" -> "No single recipe for answering a question"
+"shoe leather" -> "No single recipe for answering a question"
+}')
+ggdag(model_dagitty)+theme_dag()
+```
+
+```{r}
+ ggdag(model_dagitty, text = FALSE, use_labels = "name") +
+     theme_dag()+labs(title = "AsteriK econometrics not a good idea", subtitle = "Finding possible solutions of a problem in observed data is more than simply \n running regressions. It demands holistic thinking.")
+```
