@@ -1,0 +1,13 @@
+---
+title: "Habits"
+author: "John Doe"
+format: beamer
+---
+  
+- Turn off alarm
+- Get out of bed
+
+---
+  
+- Get in bed
+- Count sheep
