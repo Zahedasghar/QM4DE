@@ -1,0 +1,76 @@
+---
+title: "DAGs"
+format:
+  revealjs:
+    theme: [default,custom.scss]
+editor: visual
+---
+
+## Directed Acyclical Graphs
+
+```{r}
+# Load packages
+library(tidyverse)  # For dplyr, ggplot, and friends
+library(ggdag)      # For plotting DAGs
+library(dagitty)    # For working with DAG logic
+model_dagitty<-dagitty('dag {
+bb="-3.184,-3.632,3.709,3.566"
+"Pak Economy Vulnerabilities" [pos="-0.019,-0.016"]
+"Periodic slowdown (structural issues)" [pos="0.893,-3.033"]
+"high debt payments" [pos="-2.527,1.890"]
+"high inflation" [pos="3.134,-0.089"]
+"global economic engines slowdown (China, US, Euro)" [pos="1.016,2.966"]
+"CAD" [pos="-2.609,-1.819"]
+"US: high inflation, high feds rate" -> "Pak Economy Vulnerabilities"
+"Euro: high energy, war, inflation" -> "Pak Economy Vulnerabilities"
+"China: Real Estate crisis after covid" -> "Pak Economy Vulnerabilities"
+"high debt payments" -> "Pak Economy Vulnerabilities"
+"high inflation" -> "Pak Economy Vulnerabilities"
+"Periodic slowdown (structural issues)" -> "Pak Economy Vulnerabilities"
+"CAD" -> "Pak Economy Vulnerabilities"
+"global economic engines slowdown (China, US, Euro)" -> "Pak Economy Vulnerabilities"
+}')
+ggdag(model_dagitty)+theme_dag()
+```
+
+## 
+
+```{r}
+library(ggthemes)
+ ggdag(model_dagitty, text = FALSE, use_labels = "name") +
+     theme_dag()+labs(title = "Pakistan economic challenges", subtitle = "Pakistan economy was in its usual periodic slowdown (regular phenomenon due to structual issues) and this crisis has deepened \nfurther due to devastating floods in the country and global economic recession.  Three engines of global (US, China and Europe)  have \n economic recession. China has not recovered from covid disruption and its real estate is not performing well while Europe and US has also slow down \n due to high inflation and nonsense Russia-Ukraine war. All these three are major trading partners of Pakistan. \n Globally high interest rate poses a great risk of capital flight. Pakistan economy was already specially at the global level which was \n not previously the case when Pakistan needed foreign support. There is need for systemic thinking to overcome the crisis.",caption = "By: Zahid Asghar")+theme_fivethirtyeight()
+```
+
+## 
+
+```{r}
+theme_538 <- function(base_size = 12, base_family = "Chivo") {
+  theme_grey(base_size = base_size, base_family = base_family) %+replace%
+    theme(
+      # drop minor gridlines and axis-ticks
+      panel.grid.minor = element_blank(),
+      axis.ticks = element_blank(),
+      # change font elements/family
+      text = element_text(family = "Chivo", size = base_size),
+      axis.text = element_text(face = "bold", color = "grey", size = base_size),
+      axis.title = element_text(face = "bold", size = rel(1.33)),
+      axis.title.x = element_text(margin = margin(0.5, 0, 0, 0, unit = "cm")),
+      axis.title.y = element_text(margin = margin(0, 0.5, 0, 0, unit = "cm"), angle =90),
+      plot.title = element_text(face = "bold", size = rel(1.67), hjust = 0),
+      plot.title.position = "plot",
+      plot.subtitle = element_text(size = 16, margin = margin(0.2, 0, 1, 0, unit = "cm"), hjust = 0),
+      plot.caption = element_text(size = 10, margin = margin(1, 0, 0, 0, unit = "cm"), hjust = 1),
+      # change plot colors for the background/panel elements
+      plot.background = element_rect(fill = "#f0f0f0", color = NA),
+      panel.background = element_rect(fill = "#f0f0f0", color = NA),
+      panel.grid.major =  element_line(color = "#d0d0d0"),
+      panel.border = element_blank(),
+      # shrinks margin and simplify the strip/facet elements
+      plot.margin = margin(0.5, 1, 0.5, 1, unit = "cm"),
+      strip.background = element_blank(),
+      strip.text = element_text(size = rel(1.33), face = "bold")
+    )
+}
+ ggdag(model_dagitty, text = FALSE, use_labels = "name") +
+     theme_dag()+labs(title = "AsteriK econometrics not a good idea", subtitle = "Finding possible solutions of a problem in observed data is more than simply \n running regressions. It demands holistic thinking.",caption = "By: Zahid Asghar")+theme_538()
+```

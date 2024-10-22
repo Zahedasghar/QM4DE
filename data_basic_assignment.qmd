@@ -1,0 +1,88 @@
+---
+title: "Data Manipulation"
+format: html
+---
+
+
+**Objective**: Practice data manipulation, merging, and visualization using basics of R and STATA
+
+### Step 1: Create Your Own Data Frames
+
+**Task**: Start by creating the following data frames.
+
+#### Data Frame 1: Employee Details
+| EmployeeID | Name     | Department |
+|------------|----------|------------|
+| 1          | Alina    | Sales      |
+| 2          | Boby      | IT         |
+| 3          | Sameera  | HR         |
+| 4          | Daud   | Marketing  |
+| 5          | Hajra      | Finance    |
+
+#### Data Frame 2: Salary Information
+| EmployeeID | Salary  |
+|------------|---------|
+| 2          | 50000   |
+| 4          | 60000   |
+| 5          | 55000   |
+| 6          | 65000   |
+| 7          | 70000   |
+
+#### Data Frame 3: Performance Ratings
+| EmployeeID | Rating      |
+|------------|-------------|
+| 1          | Excellent   |
+| 3          | Good        |
+| 5          | Very Good   |
+| 7          | Outstanding |
+
+**Instructions**: 
+
+1. Create the data frames based on the tables provided. 
+
+2. Save the data frames for later use.
+
+### Step 2: Experiment with Different Combination Methods
+
+Combine the employee and salary data frames.
+
+### Step 3: Handling Missing Values
+
+**Task**: Identify employees who are missing salary information and salary records that do not have employee details.
+
+**Instructions**:
+- Identify and isolate the records that have missing values.
+- Ensure that missing data is clearly marked and analyze its implications.
+
+### Step 4: Create a Summary
+
+**Task 1**: Calculate the average salary 
+**Task 2**: Find the highest-paid employee
+
+
+### Step 5: Challenge - Combine All Three Data Frames
+
+**Task**: Combine the three data frames into a single comprehensive dataset that includes employee details, salaries, and performance ratings.
+
+### Step 6: Visualization
+
+**Task 1**: Create a scatter plot of salary vs. performance rating.  
+**Task 2**: Make a bar plot showing the average salary by department.
+
+**Instructions**:
+- Use data visualization techniques to create informative graphs.
+- Label axes and include titles to enhance clarity.
+
+### Summary
+
+In this assignment, you will: 
+
+1. **Create data frames**: Practice creating structured data tables. 
+
+2. **Combine data frames**: Merge datasets and understand how each approach differs. 
+
+3. **Handle missing values**: Identify and manage incomplete data. 
+
+4. **Create summaries** 
+
+5. **Visualize data**: Generate graphs to represent data insights effectively.
