@@ -5,7 +5,6 @@ date: "today"
 format: html
 ---
 
-
 **Objective**: Practice data manipulation, merging, and visualization using basics of R and STATA
 
 
