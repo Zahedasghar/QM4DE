@@ -1,10 +1,12 @@
 ---
 title: "Data Manipulation"
+author: "Zahid Asghar, School of Economics, QAU"
+date: "today"
 format: html
 ---
 
-
 **Objective**: Practice data manipulation, merging, and visualization using basics of R and STATA
+
 
 ### Step 1: Create Your Own Data Frames
 
